@@ -1,3 +1,5 @@
+package Encapsulamento;
+
 public class Orcamento {
     private double ValorSemanal;
     private double ValorMensal;

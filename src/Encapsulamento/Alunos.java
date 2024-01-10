@@ -1,3 +1,5 @@
+package Encapsulamento;
+
 public class Alunos {
     String Nome;
     double Nota1;
