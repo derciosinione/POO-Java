@@ -5,15 +5,18 @@ public class Main {
 
         Caes cao = new Caes("Max", "Tonisvaldo","Terrestre", true);
         System.out.println(cao);
-        cao.andar();
         cao.ladra();
+        cao.andar();
         cao.Efarejador = true;
 
-        System.out.println("*****************************");
+        System.out.println("**********************************************************");
 
-        Gatos gato = new Gatos("pelo pelo", "Joao","Terrestre");
+        Gatos gato = new Gatos("Anastacia", "Joao","Terrestre");
         System.out.println(gato);
-        gato.andar();
         gato.miar();
+        gato.andar();
+
+        System.out.println("Numero: "+ gato.Numero);
+
     }
 }

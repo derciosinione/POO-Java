@@ -22,7 +22,7 @@ public class Caes extends Animais {
 
     @Override
     public String toString() {
-        return "Cao{" +
+        return "Cao {" +
                 "Nome='" + Nome + '\'' +
                 ", Dono='" + Dono + '\'' +
                 ", Categoria='" + Categoria + '\'' +
