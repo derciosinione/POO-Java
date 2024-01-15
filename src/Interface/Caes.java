@@ -1,11 +1,9 @@
-package heranca;
+package Interface;
 
 public class Caes extends Animais {
-    public boolean Efarejador;
 
-    public Caes(String nome, String dono, String categoria, boolean eFarejador) {
+    public Caes(String nome, String dono, String categoria) {
         super(nome, dono, categoria);
-        this.Efarejador = eFarejador;
     }
 
     public Caes(String nome, String categoria) {
@@ -14,10 +12,6 @@ public class Caes extends Animais {
 
     public Caes(String nome) {
         super(nome);
-    }
-
-    public void ladra(){
-        System.out.printf("o animal %s esta ladrar \n", Nome);
     }
 
     @Override

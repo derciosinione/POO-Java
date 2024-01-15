@@ -1,22 +1,20 @@
-package heranca;
+package Interface;
 
 public class Main {
     public static void main(String[] args) {
-
-        Caes cao = new Caes("Max", "Tonisvaldo","Terrestre", true);
+        Caes cao = new Caes("Max", "Tonisvaldo","Terrestre");
         System.out.println(cao);
-        cao.ladra();
         cao.andar();
-        cao.Efarejador = true;
-
-        System.out.println("**********************************************************");
+        castrarAnimal(cao,true);
 
         Gatos gato = new Gatos("Anastacia", "Joao","Terrestre");
         System.out.println(gato);
-        gato.miar();
         gato.andar();
+        castrarAnimal(gato,false);
+    }
 
-        System.out.println("Numero: "+ gato.Numero);
-
+    private static void castrarAnimal(IAnimais animal, boolean castrar){
+        String mensagem = castrar ? "O animal %s foi castrado \n" : "O animal %s nao foi castrado \n";
+        System.out.printf(mensagem, animal.getNome());
     }
 }

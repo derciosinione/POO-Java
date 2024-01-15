@@ -1,4 +1,4 @@
-package heranca;
+package Interface;
 
 public abstract class Animais implements IAnimais {
     public String Nome;
@@ -21,6 +21,10 @@ public abstract class Animais implements IAnimais {
         Nome = nome;
     }
 
+    public String getNome() {
+        return this.Nome;
+    }
+
     public void andar(){
         Numero = 2;
         System.out.printf("(super class) o animal %s esta andar \n", Nome);
@@ -37,4 +41,5 @@ public abstract class Animais implements IAnimais {
     public void pular() {
 
     }
+
 }

@@ -1,6 +1,6 @@
 package heranca;
 
-public abstract class Animais {
+public abstract class Animais  {
     public String Nome;
     public String Dono;
     public String Categoria;
@@ -17,6 +17,7 @@ public abstract class Animais {
         Categoria = categoria;
     }
 
+
     public Animais(String nome) {
         Nome = nome;
     }
@@ -32,5 +33,9 @@ public abstract class Animais {
 
     public void dormir(){
         System.out.printf("(super class) o animal %s esta dormir \n", Nome);
+    }
+
+    public void pular() {
+
     }
 }

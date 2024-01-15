@@ -1,6 +1,6 @@
-package heranca;
+package Interface;
 
-public class Gatos extends Animais{
+public class Gatos extends Animais {
 
     public Gatos(String nome, String dono, String categoria){
         super(nome,dono, categoria);
@@ -12,9 +12,6 @@ public class Gatos extends Animais{
         System.out.printf("o animal %s esta andar a dancar \n", Nome);
     }
 
-    public void miar(){
-        System.out.printf("o animal %s esta miar \n", Nome);
-    }
     @Override
     public String toString() {
         return "Gato{" +
